@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>موقع كريم</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: #fff;
+      font-family: 'Cairo', sans-serif;
+      min-height: 100vh;
+    }.container {
+      text-align: center;
+      z-index: 2;
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }.avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      margin-top: 52px;
+      border: 4px solid #333;
+      object-fit: cover;
+      box-shadow: 0 8px 24px #000a;
+      background: #222;
+    }.buttons {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      align-items: center;
+      width: 280px;
+    }.btn-link {
+      width: 100%;
+      background: #222;
+      color: #23eb66;
+      border: none;
+      border-radius: 25px;
+      font-size: 1.1em;
+      font-weight: 700;
+      padding: 15px 0;
+      cursor: pointer;
+      transition: background 0.25s, color 0.25s, transform 0.13s;
+      box-shadow: 0 2px 12px #0005;
+      text-decoration: none;
+      letter-spacing:.5px;
+    }.btn-link:hover {
+      background: #23eb66;
+      color: #111;
+      transform: scale(1.045);
+    }
+    /* تجعل الجزيئات في الخلفية */
+    #particles-js {
+      position: fixed;
+      top: 0;left: 0;right: 0;bottom: 0;
+      width: 100vw; height: 100vh;
+      z-index: 1;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="container">
+    <img src="1.jpg" alt="صورة كريم" class="avatar">
+    <div class="buttons">
+      <a href="https://wa.me/201102274674" class="btn-link" target="_blank">كلمني واتس يا صاحبي</a>
+      <a href="https://www.instagram.com/xx_karem_mamdouh_xx?igsh=MTdhY29ydzJmbmt4cQ==" class="btn-link" target="_blank">تعاله انستا يا حب</a>
+      <a href="https://www.facebook.com/share/1BGK4y6XoB/" class="btn-link" target="_blank">تعاله فيس يا غالي</a>
+    </div>
+  </div>
+  <!-- مكتبة الجزيئات -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 80, "density": { "enable": true, "value_area": 700 } },
+      "color": { "value": "#23eb66" },
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.4, "random": true },
+      "size": { "value": 3, "random": true },
+      "move": {
+        "enable": true,
+        "speed": 2,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out"
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 140,
+        "color": "#23eb66",
+        "opacity": 0.16,
+        "width": 1
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": { "enable": true, "mode": "repulse" },
+        "onclick": { "enable": false },
+        "resize": true
+      }
+    },
+    "retina_detect": true
+  });
+  </script>
+</body>
+</html>
